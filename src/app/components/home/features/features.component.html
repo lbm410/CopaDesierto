@@ -1,0 +1,20 @@
+<section class="features-section">
+    <div class="features-container">
+      <div class="features-grid">
+        <div class="feature-card" *ngFor="let feature of features">
+          <div class="icon-container" [ngClass]="feature.icon">
+            <div *ngIf="feature.icon === 'location'" class="icon location-icon"></div>
+            <div *ngIf="feature.icon === 'teams'" class="icon teams-icon"></div>
+            <div *ngIf="feature.icon === 'trophy'" class="icon trophy-icon"></div>
+          </div>
+          <h3 class="feature-title">{{ feature.title }}</h3>
+          <p class="feature-description">{{ feature.description }}</p>
+        </div>
+      </div>
+      
+      <div class="final-cta">
+        <h2>¿ESTÁS PREPARADO PARA CONQUISTAR EL DESIERTO?</h2>
+      </div>
+    </div>
+  </section>
+  

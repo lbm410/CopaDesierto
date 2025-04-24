@@ -1,15 +1,13 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { HeroComponent } from '../hero/hero.component';
+import { Component } from "@angular/core"
+import { HeroComponent } from "../hero/hero.component"
+import { FeaturesComponent } from "../features/features.component"
+import { IntroAnimationComponent } from "../../intro-animation/intro-animation.component"
 
 @Component({
-  selector: 'app-home',
+  selector: "app-home",
   standalone: true,
-  imports: [HeroComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  imports: [HeroComponent, FeaturesComponent, IntroAnimationComponent],
+  templateUrl: "./home.component.html",
+  styleUrl: "./home.component.scss",
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}

@@ -1,0 +1,101 @@
+.hero-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero-content {
+    z-index: 2;
+    padding: 2rem;
+    max-width: 800px;
+  }
+  
+  .logo-container {
+    margin-bottom: 2rem;
+    
+    .logo {
+      width: 400px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    
+    .title {
+      font-size: 3.5rem;
+      font-weight: 900;
+      line-height: 1;
+      margin: 0.5rem 0;
+      letter-spacing: 1px;
+      color: #2d1e0f;
+    }
+    
+    .subtitle {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 0.5rem 0;
+      color: #2d1e0f;
+    }
+    
+    .location {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 0.5rem 0;
+      color: #2d1e0f;
+    }
+  }
+  
+  .tagline {
+    margin: 3rem 0;
+    
+    h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+    
+    .description {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .cta-container {
+    margin-top: 2rem;
+    
+    .cta-button {
+      background-color: #c1392171;
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+      &:hover {
+        background-color: darken(#c13a21, 10%);
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo-container .title {
+      font-size: 2.5rem;
+    }
+    
+    .tagline h2 {
+      font-size: 2rem;
+    }
+  }
+  
